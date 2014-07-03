@@ -2,11 +2,16 @@ set ts=4
 set sw=4
 set expandtab
 set smarttab
-colorscheme jellybeans
 
 let mapleader=","
 map <leader>w :write <Enter>
+map <leader>q :quit <Enter>
 map <leader>n :NERDTreeToggle <Enter>
+
+set guioptions-=L
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
 
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
@@ -31,6 +36,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'wavded/vim-stylus'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -46,3 +52,6 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+
+autocmd FileType python setlocal ts=4 sw=4 et
+autocmd FileType html setlocal ts=2 sw=2 et
