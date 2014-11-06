@@ -7,6 +7,7 @@ let mapleader=","
 map <leader>w :write <Enter>
 map <leader>q :quit <Enter>
 map <leader>n :NERDTreeToggle <Enter>
+map <leader>c :copen <Enter>
 
 set guioptions-=L
 set guioptions-=m
@@ -37,6 +38,11 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'wavded/vim-stylus'
+NeoBundle 'nono/vim-handlebars'
+NeoBundle 'wookiehangover/jshint.vim'
+NeoBundle 'xolox/vim-misc' "required by vim-session
+NeoBundle 'xolox/vim-session'
+
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -55,3 +61,13 @@ NeoBundleCheck
 
 autocmd FileType python setlocal ts=4 sw=4 et
 autocmd FileType html setlocal ts=2 sw=2 et
+autocmd FileType htmldjango setlocal ts=2 sw=2 et
+autocmd FileType stylus setlocal ts=4 sw=4 noet
+autocmd FileType handlebars.html setlocal ts=2 sw=2 et
+
+colorscheme jellybeans
+
+" plugin config
+let g:ctrlp_custom_ignore = {
+\   'dir': '(bower_components|node_modules)',
+\ }
