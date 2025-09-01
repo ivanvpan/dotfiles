@@ -1,0 +1,31 @@
+{
+  "tool_use_confirmation": {
+    "bash": {
+      "enabled": true,
+      "allow_patterns": [
+        "^ls\\b",
+        "^pwd\\b",
+        "^find\\b",
+        "^grep\\b",
+        "^rg\\b",
+        "^which\\b",
+        "^whereis\\b",
+        "^echo\\b",
+        "^cat\\b",
+        "^head\\b",
+        "^tail\\b",
+        "^wc\\b",
+        "^tree\\b",
+        "^file\\b",
+        "^stat\\b",
+        "^du\\b",
+        "^df\\b",
+        "^env\\b",
+        "^printenv\\b",
+        "^set\\b",
+        "^type\\b",
+        "^command\\s+-v\\b"
+      ]
+    }
+  }
+}
